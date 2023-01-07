@@ -16,7 +16,7 @@ function AddItem() {
         try {
           const response = await axios({
             method: "post",
-            url: "http://localhost:5000/addItem",
+            url: "https://listtodobackend.onrender.com/addItem",
             data: formData,
             headers: { "Content-Type" : "application/json"},
           });

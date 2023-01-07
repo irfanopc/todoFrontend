@@ -10,7 +10,7 @@ function Register() {
         if(data.password !==data.cpassword){
             return alert(`password doesn't match`)
         }
-    fetch("http://localhost:5000/signup",{
+    fetch("https://listtodobackend.onrender.com/signup",{
         method:"post",
         headers:{
             "Content-Type" : "application/json"
@@ -41,7 +41,7 @@ function Register() {
                     <input className='login-input'  type="email" placeholder="username should be a valid email id" name="username"  required  onChange={(e)=>{setData({...data,email:e.target.value})}} />
                     <input className='login-input'  type="password" placeholder="Password" name="password"  required onChange={(e)=>{setData({...data,password:e.target.value})}} />
                     <input className='login-input'  type="password" placeholder="Confirm Password" name="cpassword"  required onChange={(e)=>{setData({...data,cpassword:e.target.value})}} />
-                    <button className='login-btn' type="submit" onClick={onRegister} >Sign up</button>
+                    <button className='login-btn'   type="submit" onClick={onRegister} >Sign up</button>
                 </form>
             </div>
             <div className='addition'>

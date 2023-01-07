@@ -15,7 +15,7 @@ let setemail = email.split('@')[0]
 console.log(id);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/userdetails/${id}`)
+      .get(`https://listtodobackend.onrender.com/userdetails/${id}`)
       .then((data) => {
         console.log(data);
         let user = data.data.userTasks;
@@ -39,7 +39,7 @@ console.log(id);
 
 
   const handleLogout =  () => {
-    axios.get('http://localhost:5000/signout')
+    axios.get('https://listtodobackend.onrender.com/signout')
       .then((data)=> {
         localStorage.removeItem('email')
         localStorage.removeItem('id')
