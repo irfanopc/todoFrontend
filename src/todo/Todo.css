@@ -1,0 +1,25 @@
+.header{
+    border: 1px solid rgb(5, 164, 53);
+    height: 80px;
+   
+}
+.sidebar{
+    border: 1px  green;
+    background: rgb(184, 236, 11);
+    width: 20%;
+    height: 380px;
+   
+}
+.table{
+    margin-left: 400px;
+}
+table,td,tr{
+    border: 1px solid black;
+}
+.addActivity {
+    margin-left: 702px;
+    border: 3px solid violet;
+}
+.logout-button{
+padding-top: 70px;
+}
