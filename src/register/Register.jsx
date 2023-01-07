@@ -23,9 +23,10 @@ function Register() {
     }).then(res=>res.json())
     .then((data)=>{
         console.log(data);
-        if(data.message==="user already exist"){
-            return alert("user already exist")
+        if(data.message){
+            return alert(data.message)
         }
+        alert('user loggin successfully')
         navigator("/");
     })
     
