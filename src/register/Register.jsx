@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './register.css'
 
 function Register() {
     const [data,setData] = useState({username:"",password:"",cpassword:""})
+    const navigator=useNavigate();
     const onRegister=(e)=>{
         e.preventDefault()
         if(data.password !==data.cpassword){
